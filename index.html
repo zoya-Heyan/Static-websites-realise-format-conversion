@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>文件格式转换器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ 文件格式转换器</h1>
+        <p>上传图片并选择想要转换的格式</p>
+
+        <div class="card">
+            <input type="file" id="fileInput" accept="image/*">
+            <select id="formatSelect">
+                <option value="image/png">PNG</option>
+                <option value="image/jpeg">JPG</option>
+            </select>
+            <button id="convertBtn">开始转换</button>
+            <a id="downloadLink" style="display:none;">下载转换后的文件</a>
+
+            <!-- 预览区 -->
+            <div class="preview">
+                <div>
+                    <h3>原图</h3>
+                    <img id="originalPreview" src="" alt="">
+                </div>
+                <div>
+                    <h3>转换后</h3>
+                    <img id="convertedPreview" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by 陈先生</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
